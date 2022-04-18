@@ -11,6 +11,8 @@ import Apt from "../Components/Apt/Apt";
 import { Grid } from "@mui/material";
 import TeamMember from "../Components/TeamMember/TeamMember";
 import { Box } from "@mui/system";
+import Teams from "../Components/Teams/Teams";
+import Apartments from "../Components/Apartments/Apartments";
 
 export default function Home() {
   return (
@@ -55,23 +57,9 @@ export default function Home() {
       </Marquee>
       <About />
       <DigitalExp />
-      <RoadMap />
-      <Grid container sx={{ padding: "0 20px" }} spacing={3}>
-        <Apt />
-        <Apt />
-        <Apt />
-        <Apt />
-        <Apt />
-        <Apt />
-      </Grid>
-      <Box className="container">
-        <Grid container sx={{ padding: "0 20px" }} spacing={3}>
-          <TeamMember />
-          <TeamMember />
-          <TeamMember />
-          <TeamMember />
-        </Grid>
-      </Box>
+      {/* <RoadMap /> */}
+      <Apartments />
+      <Teams />
       {/* <main className={styles.main}></main> */}
 
       <footer className={styles.footer}>

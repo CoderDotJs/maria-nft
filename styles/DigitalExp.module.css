@@ -105,12 +105,12 @@
   content: "";
   display: block;
   width: 100%;
-  height: 13%;
+  height: 15%;
   background: #fff;
   position: absolute;
   transform: skewY(-3deg);
   z-index: 1;
-  top: -5%;
+  top: -10%;
   left: 0;
   opacity: 1;
 }

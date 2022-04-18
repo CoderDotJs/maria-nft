@@ -1,0 +1,33 @@
+.name {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 25px;
+  line-height: 30px;
+  /* identical to box height */
+
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #0c2705;
+}
+.job {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 30px;
+  /* identical to box height */
+
+  text-align: center;
+
+  color: #8f8f8f;
+}
+.icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icons a {
+  margin: 10px;
+}
