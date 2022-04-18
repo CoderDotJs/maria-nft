@@ -7,6 +7,10 @@ import Marquee from "react-fast-marquee";
 import About from "../Components/About/About";
 import DigitalExp from "../Components/DigitalExp/DigitalExp";
 import RoadMap from "../Components/RoadMap/RoadMap";
+import Apt from "../Components/Apt/Apt";
+import { Grid } from "@mui/material";
+import TeamMember from "../Components/TeamMember/TeamMember";
+import { Box } from "@mui/system";
 
 export default function Home() {
   return (
@@ -52,6 +56,22 @@ export default function Home() {
       <About />
       <DigitalExp />
       <RoadMap />
+      <Grid container sx={{ padding: "0 20px" }} spacing={3}>
+        <Apt />
+        <Apt />
+        <Apt />
+        <Apt />
+        <Apt />
+        <Apt />
+      </Grid>
+      <Box className="container">
+        <Grid container sx={{ padding: "0 20px" }} spacing={3}>
+          <TeamMember />
+          <TeamMember />
+          <TeamMember />
+          <TeamMember />
+        </Grid>
+      </Box>
       {/* <main className={styles.main}></main> */}
 
       <footer className={styles.footer}>

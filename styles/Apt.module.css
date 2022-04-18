@@ -1,0 +1,32 @@
+.sub {
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  margin-bottom: 10px;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+.img__box {
+  max-height: 350px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.h4 {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 25px;
+  line-height: 30px;
+  /* identical to box height */
+
+  text-transform: uppercase;
+
+  color: #0c2705;
+}
