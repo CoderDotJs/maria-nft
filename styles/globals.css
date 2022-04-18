@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700;800;900&display=swap");
 html,
 body {
   padding: 0;
@@ -13,4 +14,61 @@ a {
 
 * {
   box-sizing: border-box;
+  font-family: "Barlow";
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+.gradient__btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  padding: 10px;
+  cursor: pointer;
+  color: white !important;
+  border: none;
+
+  /* g */
+
+  background: linear-gradient(90deg, #028de4 0%, #f31977 49.14%, #aa09c5 100%);
+  border-radius: 20px;
+}
+.gradient__border__btn {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  width: 150px;
+  padding: 10px;
+  cursor: pointer;
+  border: none;
+  /* z-index: 1; */
+  border: none;
+  background: linear-gradient(90deg, #fff, #fff);
+}
+.gradient__border__btn::before {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 103%;
+  height: 103%;
+  background: linear-gradient(90deg, #028de4 0%, #f31977 49.14%, #aa09c5 100%);
+  border-radius: 20px;
+  z-index: -2;
+}
+ul li::before {
+  content: "\2022";
+  color: #fff;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: 1em;
 }

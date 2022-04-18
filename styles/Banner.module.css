@@ -1,0 +1,111 @@
+.banner {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.h1 {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 62px;
+  line-height: 74px;
+  text-align: center;
+  margin: 0 auto 70px auto;
+  color: #333333;
+}
+.h1 span {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 62px;
+  line-height: 74px;
+  text-align: center;
+
+  color: #f31977;
+}
+.p {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 30px;
+  text-align: center;
+  margin: 0 auto 70px auto;
+  color: #333333;
+}
+.btn__group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn {
+  position: relative;
+  margin: 0 0 0 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  width: 150px;
+  padding: 10px;
+  height: 35px;
+  cursor: pointer;
+  border: none;
+  /* z-index: 1; */
+  border: none;
+  background: linear-gradient(90deg, #028de4 0%, #f31977 49.14%, #aa09c5 100%);
+}
+/* .btn{
+  width: 300px;
+  margin: 10px 0;
+  border: double 3px transparent;
+  border-radius: 20px;
+  background-image: linear-gradient(white, white),
+    radial-gradient(
+      circle at top left,
+      #028de4 0%,
+      #f31977 49.14%,
+      #aa09c5 100%
+    );
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+} */
+.btn button {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  width: 148px;
+  height: 33px;
+  padding: 10px;
+  cursor: pointer;
+  border: none;
+  /* z-index: 1; */
+  border: none;
+  background: #fff;
+}
+.icons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: space-around;
+  position: absolute;
+  right: 0;
+  transform: translate(-50%, 0);
+}
+.icons a {
+  color: black;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+.arrow__down {
+  padding: 15px;
+  border-radius: 50%;
+  border: 1px dashed gray;
+  display: block;
+  margin: 50px auto;
+}

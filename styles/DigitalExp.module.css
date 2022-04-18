@@ -1,0 +1,129 @@
+.h1 {
+  background: linear-gradient(90deg, #028de4 0%, #f31977 49.14%, #aa09c5 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 60px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+}
+.gradient__border {
+  width: auto;
+  margin: 30px 0;
+  /* height: 80px; */
+  border: double 3px transparent;
+  border-radius: 10px;
+  background-image: linear-gradient(white, white),
+    radial-gradient(
+      circle at top left,
+      #028de4 0%,
+      #f31977 49.14%,
+      #aa09c5 100%
+    );
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+.gradient__circle {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: conic-gradient(
+    #028de4 0deg,
+    #028de4 90deg,
+    #f31977 90deg,
+    #f31977 180deg,
+    #aa09c5 180deg,
+    #aa09c5 270deg
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gradient__circle::before {
+  content: "";
+  display: block;
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+  background-position: center;
+  position: absolute;
+  background: #fff;
+  z-index: 1;
+}
+.inner {
+  padding: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background: transparent;
+}
+.h3 {
+  margin: 0 0 0 10px;
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 36px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+
+  color: #333333;
+}
+.p {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  padding: 0 0 0 10px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+
+  color: #333333;
+}
+.dg__exp {
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.03) 0%, #a909c537 100%);
+  padding: 140px 0;
+  position: relative;
+  overflow: hidden;
+}
+.dg__exp::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 13%;
+  background: #fff;
+  position: absolute;
+  transform: skewY(-3deg);
+  z-index: 1;
+  top: -5%;
+  left: 0;
+  opacity: 1;
+}
+.dg__exp::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 13%;
+  background: #fff;
+  position: absolute;
+  transform: skewY(-3deg);
+  z-index: 1;
+  bottom: -5%;
+  left: 0;
+  opacity: 1;
+}
